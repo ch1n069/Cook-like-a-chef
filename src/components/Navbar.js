@@ -1,10 +1,11 @@
 import React from "react";
-
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav>
-        <a>
+      <nav className="bg">
+        <a href="#">
           <svg
             id="logo-36"
             width="40"
@@ -20,6 +21,15 @@ const Navbar = () => {
               fill="#FFA589"
             ></path>{" "}
           </svg>
+          <div className="links">
+            <ul>
+              <li Link to="/">
+                Home
+              </li>
+              <li>Home </li>
+              <li>Home </li>
+            </ul>
+          </div>
         </a>
       </nav>
     </div>
